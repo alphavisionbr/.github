@@ -1,0 +1,58 @@
+name: Sugerir uma melhoria
+description: Sugira uma nova funcionalidade ou melhoria para um projeto da Alphavision®.
+title: "[Melhoria]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por contribuir com ideias para melhorar nossos projetos.
+
+        Antes de continuar, verifique se já existe uma Issue relacionada à mesma sugestão.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema ou necessidade
+      description: Descreva o problema, necessidade ou limitação que motivou esta sugestão.
+      placeholder: Explique o contexto e por que esta melhoria seria útil.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Solução ou melhoria sugerida
+      description: Descreva como você imagina que a funcionalidade ou melhoria poderia funcionar.
+      placeholder: Descreva sua sugestão da forma mais clara possível.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas consideradas
+      description: Informe outras soluções, alternativas ou formas de contornar a necessidade que você tenha considerado.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Informações adicionais
+      description: Adicione exemplos, referências, capturas de tela ou qualquer outra informação que possa ajudar a compreender a sugestão.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Verificações
+      options:
+        - label: Verifiquei se já existe uma Issue relacionada a esta sugestão.
+          required: true
+        - label: Esta sugestão está relacionada ao projeto deste repositório.
+          required: true
+        - label: Confirmo que não incluí senhas, credenciais, tokens, chaves de API ou outras informações confidenciais.
+          required: true
