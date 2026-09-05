@@ -1,0 +1,87 @@
+name: Relatar um bug
+description: Informe um problema ou comportamento inesperado em um projeto da Alphavision®.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por dedicar seu tempo para relatar um problema.
+
+        Antes de continuar, verifique se já existe uma Issue relacionada ao mesmo problema.
+
+        Para vulnerabilidades de segurança, não utilize este formulário. Consulte nossa Política de Segurança.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição do problema
+      description: Descreva de forma clara o problema ou comportamento inesperado encontrado.
+      placeholder: Explique o que aconteceu e, se possível, o que você esperava que acontecesse.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Passos para reproduzir
+      description: Informe os passos necessários para reproduzir o problema.
+      placeholder: |
+        1. Acesse...
+        2. Configure...
+        3. Execute...
+        4. Observe...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento esperado
+      description: Descreva o comportamento que você esperava.
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Versão
+      description: Informe a versão do projeto em que o problema foi identificado.
+      placeholder: Exemplo: 2.1.3
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Ambiente
+      description: Informe os dados relevantes do ambiente em que o problema ocorreu.
+      placeholder: |
+        Sistema operacional:
+        PHP:
+        WordPress/WHMCS:
+        Navegador:
+        Outros:
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Informações adicionais
+      description: Adicione logs, capturas de tela ou qualquer outra informação que possa ajudar na análise.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Verificações
+      options:
+        - label: Verifiquei se já existe uma Issue relacionada a este problema.
+          required: true
+        - label: Confirmo que não incluí senhas, credenciais, tokens, chaves de API ou outras informações confidenciais.
+          required: true
+        - label: Confirmo que este relato não contém uma vulnerabilidade de segurança.
+          required: true
