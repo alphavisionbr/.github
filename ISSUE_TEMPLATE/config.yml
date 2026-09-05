@@ -1,0 +1,10 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: Política de Segurança
+    url: https://github.com/alphavisionbr/.github/blob/main/SECURITY.md
+    about: Para relatar vulnerabilidades de segurança, consulte nossa política e utilize o canal privado indicado.
+
+  - name: Site da Alphavision®
+    url: https://alphavision.com.br
+    about: Acesse o site oficial da Alphavision® para informações institucionais e outros canais de contato.
